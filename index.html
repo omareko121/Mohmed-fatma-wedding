@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('Grey Floral Border Save the Date Invitation Card.jpg') no-repeat center center fixed;
+            background-size: cover;
+            filter: blur(8px);
+            /* Increased blur for background */
+            z-index: -1;
+            /* Make sure it stays behind everything */
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            /* Adjusted opacity */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .video-container {
+            text-align: center;
+            z-index: 1;
+            /* Ensure it's above the background */
+        }
+
+        .link-container {
+            margin-top: 20px;
+            z-index: 1;
+            /* Ensure it's above the background */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background"></div>
+    <div class="overlay">
+        <div class="video-container">
+            <video width="400" controls>
+                <source src="Grey Floral Border Save the Date Invitation Card-4.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="link-container">
+            <a href="https://maps.app.goo.gl/HxGqSmmDFTVYhn8C6" target="_blank"
+                style="color: white; text-decoration: none;">Check The
+                Location
+                Here</a>
+        </div>
+    </div>
+</body>
+
+</html>
